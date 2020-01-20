@@ -7,14 +7,21 @@ import Arrow from '../../assets/icons/white/right-arrow-white.png'
 import './style.css'
 
 
-function Home(props){
-    return(
-        <div>
-            <img src={logo} alt='logo da empresa'></img>
-            <img src={imgHome} alt='Imagem de entrada: homem e plantas'></img>
-            <Button
-            classes='botao'
-            >start quizz</Button>
+function Home(props) {
+    return (
+        <div className='container'>
+            <nav className='nav'>
+                <img src={logo} alt='logo da empresa'></img>
+            </nav>
+            <div className='home'> 
+                <div className='home-title__btn'>
+                    <h2>Find your next green friend</h2>
+                    <Button
+                        classes='botao'
+                    >start quizz</Button>
+                </div>
+                <img className='home-img' src={imgHome} alt='Imagem de entrada: homem e plantas'></img>
+            </div>
         </div>
     )
 }

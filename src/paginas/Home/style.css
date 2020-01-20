@@ -1,8 +1,30 @@
+.container{
+  margin: 50px;
+}
+
+.nav{
+  display: flex;
+  justify-content: start;
+}
+
+.home{
+  display: flex;
+}
+
+.home-title__btn h2{
+  font-size:  5.0rem;
+}
+
+.home-img{
+  width: 55%;
+  height: 40%;
+}
+
 .botao {
     background: #15573F;
     border-radius: 20px;
     color: #ffffff;       
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;    
     display: flex;
     justify-content: center;
