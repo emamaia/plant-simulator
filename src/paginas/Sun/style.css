@@ -30,7 +30,7 @@ span{
 }
 
 .btn-pages{
-    background:#ffffff;
+    background:#f5efef;
     border-radius: 20px;
     color: #15573F;         
     padding: 10px 30px;
@@ -42,9 +42,10 @@ span{
   
   
   .container-btn{
-      padding: 40px;
+      padding: 70px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      
       
     }
     
