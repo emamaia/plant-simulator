@@ -1,0 +1,28 @@
+.pages{      
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: initial; 
+}
+
+.pages-logo{
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);  
+    height: 1.5rem; 
+    position: absolute;
+    top: 164px;
+    left: -11px;   
+}
+
+.pages-line{
+    width: 1px;
+    height: 15rem;
+    background-color: #15573F;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+   
+}

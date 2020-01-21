@@ -1,0 +1,55 @@
+.container-sun{
+    padding: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.container-pages{
+    width: 70%;
+}
+
+
+.pages-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;    
+    color: #555454;
+}
+
+span{
+    font-weight: bold;    
+}
+
+.container-icons{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.btn-pages{
+    background:#ffffff;
+    border-radius: 20px;
+    color: #15573F;         
+    padding: 10px 30px;
+    border: #15573F solid 1px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .container-btn{
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    
+    .botao--desabilitado {
+      color: gray;
+      background: lightgrey;
+      pointer-events: none;
+    }
