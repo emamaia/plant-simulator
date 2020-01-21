@@ -4,12 +4,15 @@
    align-items: center;
    justify-content: center;
     font-size: 0.8rem;
-    width: 30%;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-color: #fffafa;
 }
 
 .icons{
-    background-color:#fffafa;
+    background-color:#fffafa; 
 }
 
+.text-icon{
+    background-color:#fffafa;
+}
