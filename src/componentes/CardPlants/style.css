@@ -1,0 +1,56 @@
+.plants-container{    
+    background-color: #fffafa;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    width:16%;   
+    border-radius: 8px;                 
+}
+
+.plants-img{
+    height: 100px;
+    margin-top: 20px;
+}
+
+.plants-text{
+    font-size: 1rem;
+    color: #15573F;
+    background-color: #fffafa;  
+    margin-left: 10px;  
+}
+
+.plants-price{
+    display: flex;
+    justify-content: space-between;        
+    background-color: #fffafa;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p{
+    color: #555454;
+    background-color: #fffafa;
+    font-weight: 700;
+}
+
+.plants-icons{
+    background-color: #fffafa; 
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    background-color: #fffafa;
+}
+
+.plants-btn{
+    background:#fffafa;
+    border-radius: 20px;
+    color: #15573F;         
+    padding: 10px 25px;
+    border: #15573F solid 1px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}

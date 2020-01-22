@@ -1,0 +1,13 @@
+.container-title{
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;    
+}
+
+
+.container-plants{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 90px;
+}
