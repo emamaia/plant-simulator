@@ -1,7 +1,7 @@
 import React from 'react';
 import PagesLogo from '../../componentes/PagesLogo'
 import CardIcons from '../../componentes/CardIcons'
-import Button from '../../componentes/Button'
+import Links from '../../componentes/Links'
 
 import water from '../../assets/illustrations/wateringcan.png'
 import oneDrop from '../../assets/icons/green/one-drop.svg'
@@ -48,13 +48,15 @@ function Water(props) {
                 </div>
 
                 <div className='container-btn'>
-                    <Button
+                    <Links
+                        to='/sun'
                         classes='btn-pages'
-                    >home</Button>
+                    >previous</Links>
 
-                    <Button
+                    <Links
+                        to='/pets'
                         classes='btn-pages'
-                    >next</Button>
+                    >next</Links>
                 </div>
 
             </div>

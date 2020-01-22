@@ -1,7 +1,7 @@
 import React from 'react';
 import PagesLogo from '../../componentes/PagesLogo'
 import CardIcons from '../../componentes/CardIcons'
-import Button from '../../componentes/Button'
+import Links from '../../componentes/Links'
 
 import sun from '../../assets/illustrations/sun.png'
 import iconSunHigh from '../../assets/icons/coral/high-sun.svg'
@@ -47,13 +47,15 @@ function Sun(props) {
                 </div>
 
                 <div className='container-btn'>
-                    <Button
+                    <Links
+                        to='/'
                         classes='btn-pages'
-                    >home</Button>
+                    >home</Links>
 
-                    <Button
+                    <Links
+                        to='/water'
                         classes='btn-pages'
-                    >next</Button>
+                    >next</Links>
                 </div>
 
             </div>

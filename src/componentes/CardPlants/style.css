@@ -43,14 +43,3 @@ p{
     background-color: #fffafa;
 }
 
-.plants-btn{
-    background:#fffafa;
-    border-radius: 20px;
-    color: #15573F;         
-    padding: 10px 25px;
-    border: #15573F solid 1px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}

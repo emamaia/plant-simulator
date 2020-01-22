@@ -1,7 +1,7 @@
 import React from 'react';
 import PagesLogo from '../../componentes/PagesLogo'
 import CardIcons from '../../componentes/CardIcons'
-import Button from '../../componentes/Button'
+import Links from '../../componentes/Links'
 
 import sun from '../../assets/illustrations/sun.png'
 import pet from '../../assets/icons/coral/pet.svg'
@@ -40,13 +40,15 @@ function Pets(props) {
                 </div>
 
                 <div className='container-btn'>
-                    <Button
+                    <Links
+                        to='/water'
                         classes='btn-pages'
-                    >home</Button>
+                    >previous</Links>
 
-                    <Button
+                    <Links
+                        to='/plants'
                         classes='btn-pages'
-                    >next</Button>
+                    >next</Links>
                 </div>
 
             </div>

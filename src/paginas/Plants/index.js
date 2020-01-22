@@ -1,3 +1,4 @@
+
 import React from 'react';
 import CardPlants from '../../componentes/CardPlants'
 import PagesLogo from '../../componentes/PagesLogo'

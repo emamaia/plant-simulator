@@ -20,7 +20,7 @@
   height: 40%;
 }
 
-.botao {
+.home-btn {
     background: #15573F;
     border-radius: 20px;
     color: #ffffff;       
@@ -29,9 +29,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
   
-  .botao--desabilitado {
+  .btn-desabilitado {
     color: gray;
     background: lightgrey;
     pointer-events: none;

@@ -4,12 +4,12 @@ import './style.css'
 
 function Button(props) {
   return (
-    <button
-      // onClick={handleClick}
-      className={props.classes}     
-    >
-      {props.children}
-    </button>
+  
+  <button
+//   onClick={props.handleClick}
+  className='button'
+  >{props.children}</button>
+  
   )
 }
 
