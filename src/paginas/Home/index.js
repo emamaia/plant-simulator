@@ -6,7 +6,6 @@ import Arrow from '../../assets/icons/white/right-arrow-white.png'
 
 import './style.css'
 
-
 function Home(props) {
     return (
         <div className='container'>

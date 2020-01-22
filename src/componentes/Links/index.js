@@ -8,6 +8,7 @@ function Links(props) {
   
    <div className='btn'>
     <Link
+    onClick={props.handleclick}
     to={props.to}
     className={props.classes}        
     >

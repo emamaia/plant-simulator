@@ -6,12 +6,11 @@ function Button(props) {
   return (
   
   <button
-//   onClick={props.handleClick}
+  onClick={props.handleClick}
   className='button'
   >{props.children}</button>
   
   )
 }
-
 
 export default Button

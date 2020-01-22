@@ -32,8 +32,3 @@
     text-decoration: none;
   }
   
-  .btn-desabilitado {
-    color: gray;
-    background: lightgrey;
-    pointer-events: none;
-  }
