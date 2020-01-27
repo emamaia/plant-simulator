@@ -2,7 +2,7 @@
     background:#fffafa;
     color: #15573F;         
     border-radius: 20px;
-    padding: 10px 25px;
+    padding: 10px 50px;
     border: #15573F solid 1px;    
     display: flex;
     justify-content: center;
@@ -10,18 +10,4 @@
     margin: 20px;
     text-decoration: none;    
 }
-
   
-.btn-desabilitado {
-    background-color: #15573F;
-    color: #ffffff;
-    pointer-events: none;
-    border-radius: 20px;
-    padding: 10px 25px;
-    border: #15573F solid 1px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    text-decoration: none;
-  }

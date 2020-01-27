@@ -33,20 +33,29 @@ class Plants extends React.Component {
     render() {
         return (
             <div>
+                <PagesLogo />
+                <div className='container-title'>
+                    <img src={pick}></img>
+                    <h1>Our picks for you</h1>
+                </div>
 
-                {this.state.plantList.map(item => {
-                    return (
-                    <CardPlants
-                    img={item.url}
-                    text={item.text}
-                    price={item.price}
-                    toxic={item.toxicity}
-                    sun={item.sun}
-                    water={item.water}
-                    />
-                    )
-                })
-                }
+                <div className='container-plants'>
+                    <div className='container-plants__itens'>
+                        {this.state.plantList.map(item => {
+                            return (
+                                <CardPlants
+                                    img={item.url}
+                                    text={item.name}
+                                    price={item.price}
+                                    toxic={item.toxicity}
+                                    sun={item.sun}
+                                    water={item.water}
+                                />
+                            )
+                        })
+                        }
+                    </div>
+                </div>
 
             </div>
         )

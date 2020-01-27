@@ -15,10 +15,12 @@ import './style.css'
 function CardPlants(props) {
     return (
         <div className='plants-container'>
+            
             <img src={props.img} alt='Imagem de planta ' className='plants-img'></img>
             <h3 className='plants-text'>{props.text}</h3>
+            
             <div className='plants-price'>
-                <p>{props.price}</p>
+                <p>${props.price}</p>
                 <div className='plants-icons'>
                     {props.toxic === true? <img className='icon' src={toxic} alt='ícones'/>: ""}
                     <img className='icon' src={props.sun === 'high'? iconSunHigh: props.sun === 'low'? iconSunLow: noAnswer} alt='ícones' />                
