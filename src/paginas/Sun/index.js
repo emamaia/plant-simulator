@@ -1,4 +1,5 @@
-import React from 'react';
+import React  from 'react'
+
 import PagesLogo from '../../componentes/PagesLogo'
 import CardIcons from '../../componentes/CardIcons'
 import Links from '../../componentes/Links'
@@ -13,55 +14,150 @@ import iconNoAnswerW from '../../assets/icons/white/no-answer.svg'
 
 import './style.css'
 
-function Sun(props) {
-    return (
-        <div className='container-sun'>
+class Sun extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            classesHigh: 'card-icon',
+            classIconHigh: 'icons',
+            classTextHight: 'text-icon',
+            classesLow: 'card-icon',
+            classIconLow: 'icons',
+            classTextLow: 'text-icon',
+            classesNo: 'card-icon',
+            classIconNo: 'icons',
+            classTextNo: 'text-icon',
+            iconeHigh: `${iconSunHigh}`,
+            iconeLow: `${iconSunLow}`,
+            iconeNo: `${iconNoAnswer}`,
+        }
+    }
 
-            <PagesLogo />
+    handleOptionSelectHigh = () => {
+        this.setState((prevState) => {
+            return {
+                classesHigh: 'card-icon__selected',
+                classIconHigh: 'icon-selected',
+                classTextHigh: 'text-icon__selected',
+                classesLow: 'card-icon',
+                classIconLow: 'icons',
+                classTextLow: 'text-icon',
+                classesNo: 'card-icon',
+                classIconNo: 'icons',
+                classTextNo: 'text-icon',
+                iconeHigh: `${iconSunHighW}`,
+                iconeLow: `${iconSunLow}`,
+                iconeNo: `${iconNoAnswer}`,
+            }
 
-            <div className='container-pages'>
-                <div className='pages-title'>
-                    <img src={sun} alt='Imagem do sol com óculos'></img>
-                    <h2>First, set the amount of<span>sunlight </span>your plant will get. </h2>
-                </div>
+            
+        })
+        localStorage.setItem('sun', 'high')         
+    }
 
-                <div className='container-icons'>
-                    <CardIcons
-                        icon={iconSunHigh}
-                        alt='Sol forte'
-                        text='High Sunlight'
-                    />
+    handleOptionSelectLow = () => {
+        this.setState((prevState) => {
+            return {
+                classesLow: 'card-icon__selected',
+                classIconLow: 'icon-selected',
+                classTextLow: 'text-icon__selected',
+                classesHigh: 'card-icon',
+                classIconHigh: 'icons',
+                classTextHigh: 'text-icon',
+                classesNo: 'card-icon',
+                classIconNo: 'icons',
+                classTextNo: 'text-icon',
+                iconeHigh: `${iconSunHigh}`,
+                iconeLow: `${iconSunLowW}`,
+                iconeNo: `${iconNoAnswer}`,
+            }
 
-                    <CardIcons
-                        icon={iconSunLow}
-                        alt='Pouco sol'
-                        text='Low sunlight '
-                    />
+        })
+        localStorage.setItem('sun', 'low')
+    }
 
-                    <CardIcons
-                        icon={iconNoAnswer}
-                        alt='Sem sol'
-                        text='No sunlight'
-                    />
+    handleOptionSelectNo = () => {
+        this.setState((prevState) => {
+            return {
+                classesNo: 'card-icon__selected',
+                classIconNo: 'icon-selected',
+                classTextNo: 'text-icon__selected',
+                classesHigh: 'card-icon',
+                classIconHigh: 'icons',
+                classTextHigh: 'text-icon',
+                classesLow: 'card-icon',
+                classIconLow: 'icons',
+                classTextLow: 'text-icon',
+                iconeHigh: `${iconSunHigh}`,
+                iconeLow: `${iconSunLow}`,
+                iconeNo: `${iconNoAnswerW}`,
+            }
 
-                </div>
+        })
+        localStorage.setItem('sun', 'no')
+    }
 
-                <div className='container-btn'>
-                    <Links
-                        to='/'
-                        classes='btn-pages'
-                    >home</Links>
+    render() {
+        return (
+            <div className='container-sun'>
 
-                    <Links
-                        to='/water'
-                        classes='btn-pages'
-                    >next</Links>
+                <PagesLogo />
+
+                <div className='container-pages'>
+                    <div className='pages-title'>
+                        <img src={sun} alt='Imagem do sol com óculos'></img>
+                        <h2>First, set the amount of <span> sunlight </span>your plant will get. </h2>
+                    </div>
+
+                    <div className='container-icons'>
+                        <CardIcons
+                            icon={this.state.iconeHigh}
+                            alt='Sol forte'
+                            text='High Sunlight'
+                            handleClick={this.handleOptionSelectHigh}
+                            classes={this.state.classesHigh}
+                            classIcon={this.state.classIconHigh}
+                            classText={this.state.classTextHigh}
+                        />
+                        <CardIcons
+                            icon={this.state.iconeLow}
+                            alt='Pouco sol'
+                            text='Low sunlight'
+                            handleClick={this.handleOptionSelectLow}
+                            classes={this.state.classesLow}
+                            classIcon={this.state.classIconLow}
+                            classText={this.state.classTextLow}
+                        />
+
+                        <CardIcons
+                            icon={this.state.iconeNo}
+                            alt='Sem sol'
+                            text='No sunlight'
+                            handleClick={this.handleOptionSelectNo}
+                            classes={this.state.classesNo}
+                            classIcon={this.state.classIconNo}
+                            classText={this.state.classTextNo}
+                        />
+
+                    </div>
+
+                    <div className='container-btn'>
+                        <Links
+                            to='/'
+                            classes='btn-pages'
+                        >home</Links>
+
+                        <Links
+                            to='/water'
+                            classes='btn-pages'
+                        >next</Links>
+                    </div>
+
                 </div>
 
             </div>
-
-        </div>
-    )
+        )
+    }
 }
 
 export default Sun

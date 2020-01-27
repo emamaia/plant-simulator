@@ -1,18 +1,2 @@
-.card-icon{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    font-size: 0.8rem;
-    width: 150px;
-    height: 150px;
-    background-color: #fffafa;
-}
 
-.icons{
-    background-color:#fffafa; 
-}
 
-.text-icon{
-    background-color:#fffafa;
-}

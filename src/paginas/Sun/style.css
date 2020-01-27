@@ -57,8 +57,42 @@ span{
       justify-content: space-between;     
     }
     
-    .botao--desabilitado {
-      color: gray;
-      background: lightgrey;
-      pointer-events: none;
+    .card-icon{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         font-size: 0.8rem;
+         width: 150px;
+         height: 150px;
+         background-color: #fffafa;
+     }
+
+    .card-icon__selected{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        width: 150px;
+        height: 150px;
+        background-color:#FD9872;
+    }
+    
+    .icons{
+        background-color:#fffafa;         
+    }
+    
+    .icon-selected{
+        background-color:#FD9872;
+    }
+
+    .text-icon{
+        background-color:#fffafa;
+    }
+
+
+    .text-icon__selected{
+        color: #ffffff;
+        background-color:#FD9872;
     }
