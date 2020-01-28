@@ -28,7 +28,7 @@ function CardPlants(props) {
                 </div>                
             </div>
             <Button
-            classes='plants-btn'
+           
             >buy now</Button>
         </div>
     )

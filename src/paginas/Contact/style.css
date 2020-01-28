@@ -1,0 +1,26 @@
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+  }
+  
+.btn-form {
+  background:#fffafa;
+  color: #15573F;         
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: #15573F solid 1px;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;  
+  }
+  
+  .btn--desabilitado {
+    color: gray;
+    background: lightgrey;
+    pointer-events: none;
+  }

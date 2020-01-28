@@ -5,7 +5,8 @@ import Sun from './paginas/Sun'
 import Water from './paginas/Water'
 import Pets from './paginas/Pets'
 import Plants from './paginas/Plants'
-import Login from './paginas/Login'
+import Contact from './paginas/Contact'
+import PlantBuy from './paginas/PlantBuy'
 
 
 import './App.css';
@@ -19,7 +20,9 @@ function App() {
         <Route path='/water' component={Water} />
         <Route path='/pets' component={Pets} />
         <Route path='/plants' component={Plants} />
-        <Route path='/login' component={Login} />
+        <Route path='/contact' component={Contact} />    
+        <Route path='/plantbuy' component={PlantBuy} />    
+
       </div>
     </Switch>
   );

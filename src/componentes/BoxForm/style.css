@@ -1,0 +1,42 @@
+.campo {
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0 0 1rem;
+    border: 1px solid #242038;
+    border-radius: 3px;
+  }
+  
+  .campo:focus {
+    outline: none;
+    border-color: #834FC6 ;
+    box-shadow: 0 0 10px #9351b4;
+  }
+  
+  .grupo__erro {
+    color: red;
+    font-size: small;
+  }
+  
+
+  
+.btn-form {
+  background:#fffafa;
+  color: #15573F;         
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: #15573F solid 1px;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;  
+  }
+  
+  .btn--desabilitado {
+    color: gray;
+    background: lightgrey;
+    pointer-events: none;
+  }
