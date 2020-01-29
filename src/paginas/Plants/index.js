@@ -32,8 +32,7 @@ class Plants extends React.Component {
     }
 
      selecionaPlanta(id) {
-         console.log(id);
-         
+         localStorage.setItem('id',id)        
         
         this.props.history.push({
             pathname: '/plantbuy'
@@ -64,7 +63,7 @@ class Plants extends React.Component {
                                         water={item.water}
                                     />
                                     <Button
-                                        click={this.selecionaPlanta}
+                                        click={() => this.selecionaPlanta(item.id)}
                                         classes='button'
                                     >buy now</Button>
                                 </div>

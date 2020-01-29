@@ -1,6 +1,6 @@
 .container-plantbuy{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 @media (max-width: 720px) {

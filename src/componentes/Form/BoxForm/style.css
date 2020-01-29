@@ -8,20 +8,10 @@
     border: 1px solid #242038;
     border-radius: 3px;
   }
-  
-  .campo:focus {
-    outline: none;
-    border-color: #834FC6 ;
-    box-shadow: 0 0 10px #9351b4;
-  }
-  
-  .grupo__erro {
-    color: red;
-    font-size: small;
-  }
-  
-
-  
+ 
+  .div-form{
+    background-color: #afa7a7;
+  } 
 .btn-form {
   background:#fffafa;
   color: #15573F;         

@@ -27,7 +27,6 @@ function CardPlants(props) {
                     <img className='icon' src={props.sun === 'high'? iconSunHigh: props.sun === 'low'? iconSunLow: noAnswer} alt='ícones' />                
                     <img className='icon' src={props.water === 'rarely'? oneDrop: props.water === 'regularly'? twoDrop: threeDrop} alt='ícones' />
                 </div>    
-                
                             
             </div>
            

@@ -3,15 +3,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
+    
+}
+
+.div{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.div h1{
+     background-color: #ffffff;
+   padding: 10px;
+   text-align: center;
 }
 
 .container-page p{
-    background-color: #f5efef;
-}
-
-.img-plant{
-    background-color: #f5efef;
+    background-color: #ffffff;
+   
+    
 }
 
 .container-icones{
@@ -19,32 +29,47 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    margin-left: 10px;
+    background-color:#ffffff;
 }
 
 .div-icons{
     display: flex;
     justify-content: space-evenly;
     margin: 0.1rem;
+    margin-left: 10px;
+    background-color: #ffffff;
 }
 
 .div-icons p{
     margin-left: 10px;
+    background-color: #ffffff;
 
 }
 
 .div-icons img{
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 
 
 .plants-icons{
-    background-color: #fffafa; 
+    background-color: #fffafa;; 
 }
 
 .icon{
-    width: 20px;
-    height: 20px;
-    background-color: #fffafa;
+    
+    width: 25px;
+    height: 25px;
+    background-color: #fffafa;;
     margin: 1px;
+}
+
+
+@media (max-width: 720px) {
+    .container-page{
+        width: 60vw;   
+        margin-top: 20px;       
+    }  
 }
