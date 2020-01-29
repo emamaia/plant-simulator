@@ -16,7 +16,7 @@ function CardPlantBuy(props) {
                     className='img-plant'
                     alt='imagem de planta'
                 />
-                <div className='container-icons'>
+                <div className='container-icones'>
                     <div className='div-icons'>
                         <img src={props.iconToxic} alt='ícones' />
                         <p>{props.textToxic}</p>

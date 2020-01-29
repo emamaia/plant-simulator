@@ -1,3 +1,33 @@
 .btn{
     max-width: 30%;
 }
+
+@media (max-width: 1285px) {
+    .btn{
+      max-width: 45%;
+    }
+}
+
+@media (max-width: 970px) {
+    .btn{
+      max-width: 55%;
+    }
+}
+
+@media (max-width: 855px) {
+    .btn{
+      max-width: 65%;
+    }
+}
+
+@media (max-width: 570px) {
+    .btn{
+      max-width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+  .btn{
+    max-width: 100%;
+  }
+}

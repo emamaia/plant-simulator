@@ -2,6 +2,7 @@ import React from 'react';
 import { getPlants } from '../../service/base'
 import CardPlants from '../../componentes/CardPlants'
 import PagesLogo from '../../componentes/PagesLogo'
+import Button from '../../componentes/Button'
 
 import pick from '../../assets/illustrations/pick.png'
 
@@ -11,14 +12,14 @@ class Plants extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            plantList: []
+            plantList: [],
+            id:""
         }
     }
 
     componentDidMount() {
         getPlants()
             .then(response => {
-
                 this.setState({
                     plantList: response.data
                 })
@@ -28,6 +29,16 @@ class Plants extends React.Component {
             .catch(error => {
                 console.error(error)
             })
+    }
+
+     selecionaPlanta(id) {
+         console.log(id);
+         
+        
+        this.props.history.push({
+            pathname: '/plantbuy'
+        })
+
     }
 
     render() {
@@ -43,14 +54,20 @@ class Plants extends React.Component {
                     <div className='container-plants__itens'>
                         {this.state.plantList.map(item => {
                             return (
-                                <CardPlants
-                                    img={item.url}
-                                    text={item.name}
-                                    price={item.price}
-                                    toxic={item.toxicity}
-                                    sun={item.sun}
-                                    water={item.water}
-                                />
+                                <div className='div-plants'>
+                                    <CardPlants
+                                        img={item.url}
+                                        text={item.name}
+                                        price={item.price}
+                                        toxic={item.toxicity}
+                                        sun={item.sun}
+                                        water={item.water}
+                                    />
+                                    <Button
+                                        click={this.selecionaPlanta}
+                                        classes='button'
+                                    >buy now</Button>
+                                </div>
                             )
                         })
                         }

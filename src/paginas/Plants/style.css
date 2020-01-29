@@ -18,3 +18,33 @@
     margin: 50px;
     width: 60%;
 }
+
+.div-plants{
+    background-color: #fffafa;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;       
+    border-radius: 8px; 
+    margin: 1rem; 
+    width: 210px; 
+}
+
+.button{
+    background:#fffafa;
+    color: #15573F;         
+    border-radius: 20px;
+    padding: 10px 50px;
+    border: #15573F solid 1px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;    
+}
+
+.button:hover{
+    background:#15573F;
+    color: #fffafa ;
+}
+

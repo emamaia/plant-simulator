@@ -2,3 +2,11 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media (max-width: 720px) {
+    .container-plantbuy{
+      flex-direction: column;
+      align-items: center;
+    }
+       
+}

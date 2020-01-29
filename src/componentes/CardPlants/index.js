@@ -13,6 +13,7 @@ import iconSunLow from '../../assets/icons/coral/low-sun.svg'
 import './style.css'
 
 function CardPlants(props) {
+   
     return (
         <div className='plants-container'>
             
@@ -25,11 +26,11 @@ function CardPlants(props) {
                     {props.toxic === true? <img className='icon' src={toxic} alt='ícones'/>: ""}
                     <img className='icon' src={props.sun === 'high'? iconSunHigh: props.sun === 'low'? iconSunLow: noAnswer} alt='ícones' />                
                     <img className='icon' src={props.water === 'rarely'? oneDrop: props.water === 'regularly'? twoDrop: threeDrop} alt='ícones' />
-                </div>                
+                </div>    
+                
+                            
             </div>
-            <Button
            
-            >buy now</Button>
         </div>
     )
 }

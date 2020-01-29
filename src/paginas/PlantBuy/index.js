@@ -6,6 +6,8 @@ import CardPlantBuy from '../../componentes/CardPlantBuy'
 import './style.css'
 
 function PlantBuy(props){
+    
+    
     return(
         <div className='container-plantbuy'>
             <PagesLogo/>
