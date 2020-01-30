@@ -4,6 +4,8 @@ import CardIcons from '../../componentes/CardIcons'
 import Links from '../../componentes/Links'
 
 import dog from '../../assets/illustrations/dog.png'
+import arrowR from '../../assets/icons/arrowRGreen.png'
+import arrowL from '../../assets/icons/arrowLGreen.png'
 import pet from '../../assets/icons/coral/pet.svg'
 import petW from '../../assets/icons/white/pet.svg'
 import iconNoAnswer from '../../assets/icons/coral/no-answer.svg'
@@ -100,11 +102,15 @@ class Pets extends React.Component {
                         <Links
                             to='/water'
                             classes='btn-pages'
+                            arrow={arrowL}
+                            classeImg='arrow-pages'
                         >previous</Links>
 
                         <Links
                             to='/plants'
                             classes='btn-pages'
+                            arrow={arrowR}
+                            classeImg='arrow-pages'
                         >next</Links>
                     </div>
 

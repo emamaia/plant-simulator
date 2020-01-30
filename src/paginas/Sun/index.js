@@ -5,6 +5,8 @@ import CardIcons from '../../componentes/CardIcons'
 import Links from '../../componentes/Links'
 
 import sun from '../../assets/illustrations/sun.png'
+import arrowR from '../../assets/icons/arrowRGreen.png'
+import arrowL from '../../assets/icons/arrowLGreen.png'
 import iconSunHigh from '../../assets/icons/coral/high-sun.svg'
 import iconSunLow from '../../assets/icons/coral/low-sun.svg'
 import iconNoAnswer from '../../assets/icons/coral/no-answer.svg'
@@ -144,12 +146,17 @@ class Sun extends React.Component {
                     <div className='container-btn'>
                         <Links
                             to='/'
+                            arrow={arrowL}
                             classes='btn-pages'
+                            classeImg='arrow-pages'
+                           
                         >home</Links>
 
                         <Links
                             to='/water'
+                            arrow={arrowR}
                             classes='btn-pages'
+                            classeImg='arrow-pages'
                         >next</Links>
                     </div>
 

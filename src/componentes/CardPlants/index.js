@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button'
+
 
 import toxic from '../../assets/icons/grey/toxic.svg'
 import noAnswer from '../../assets/icons/grey/no-answer.svg'

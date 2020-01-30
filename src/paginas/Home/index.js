@@ -2,7 +2,8 @@ import React from 'react';
 import logo from '../../assets/logo/logo-greenthumb.svg';
 import imgHome from '../../assets/illustrations/illustration-home.png'
 import Links from '../../componentes/Links'
-import Arrow from '../../assets/icons/white/right-arrow-white.png'
+
+import arrowR from '../../assets/icons/white/right-arrow-white.png'
 
 import './style.css'
 
@@ -18,6 +19,8 @@ function Home(props) {
                     <Links
                         to='/sun'
                         classes='home-btn'
+                        arrow={arrowR}
+                        classeImg='arrow-home'
                     >start quizz</Links>
                 </div>
                 <img className='home-img' src={imgHome} alt='Imagem de entrada: homem e plantas'></img>

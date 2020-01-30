@@ -7,24 +7,26 @@ import Pets from './paginas/Pets'
 import Plants from './paginas/Plants'
 import Contact from './paginas/Contact'
 import PlantBuy from './paginas/PlantBuy'
+import Form from './componentes/Form'
 
 
 import './App.css';
 
 function App() {
   return (
-    <Switch>
       <div>
+    <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/sun' component={Sun} />
         <Route path='/water' component={Water} />
         <Route path='/pets' component={Pets} />
         <Route path='/plants' component={Plants} />
         <Route path='/contact' component={Contact} />    
-        <Route path='/plantbuy' component={PlantBuy} />    
+        <Route path='/plantbuy' component={PlantBuy} />  
+        <Route path='/form' component={Form} />  
 
-      </div>
     </Switch>
+      </div>
   );
 }
 

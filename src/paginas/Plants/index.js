@@ -45,7 +45,7 @@ class Plants extends React.Component {
             <div>
                 <PagesLogo />
                 <div className='container-title'>
-                    <img src={pick}></img>
+                    <img src={pick} alt='mão pegando planta'></img>
                     <h1>Our picks for you</h1>
                 </div>
 

@@ -4,45 +4,37 @@ import './style.css'
 
 function BoxForm(props) {
     
-  function valida (e) {
-    const nome = e.target.name
-    const valor = e.target.value
+  function validaCampo (evento) {
+    const { value, name } = evento.target
+    // const value = evento.target.value
+    // const name = evento.target.name
 
-    if (props.required && valor.trim() === '') {
-      props.onChange(nome, valor, 'Campo obrigatório')
+    if(props.required && value.trim() === ''){
+      props.mudaEstado(name, value, 'Campo obrigatório')
       return
     }
 
-    if (props.minLength && valor.length < props.minLength) {
-      props.onChange(
-        nome,
-        valor,
-        `Digite pelo menos ${props.minLength} caracteres`
-      )
+    if(props.minLength && value.length < props.minLength) {
+      props.mudaEstado(name, value, `Digite pelo menos ${props.minLength} caracteres`)
       return
     }
 
     const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    if (props.type === 'email' && !regex.test(valor)) {
-      props.onChange(nome, valor, 'Digite um email válido')
+    if(props.type === 'email' && !regex.test(value)) {
+      props.mudaEstado(name, value, 'Digite um email válido')
       return
     }
-
-    props.onChange(nome, valor)
+    props.mudaEstado(name, value)
   }
 
   return (
-    <div className='div-form'>
-    <label htmlFor={props.htmlForm}>{props.label}</label>
     <input
-      id={props.id}
-      className='campo'
-      type={props.type}
       name={props.name}
+      type={props.type}
+      className='campo'
       placeholder={props.placeholder}
-      onChange={valida}
+      onChange={validaCampo}
     />
-    </div>
   )
 }
 

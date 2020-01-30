@@ -2,6 +2,7 @@
     max-width: 30%;
 }
 
+
 @media (max-width: 1285px) {
     .btn{
       max-width: 45%;

@@ -1,20 +1,18 @@
-import React, { Component } from 'react'
-
-import ThankYou from './ThankYou'
-import Inicial from './Inicial'
+import React from 'react'
+import Form from '../../componentes/Form'
+import ThankYou from '../../componentes/Form/ThankYou'
 
 import './style.css'
 
-class Contact extends Component {
+class Contact extends React.Component {
   constructor (props) {
     super(props)
-
     this.state = {
-      conteudo: undefined
+      conteudo: 'form'
     }
   }
 
-  handleClick = (proximaPagina) => {
+  handleMudaConteudo = (proximaPagina) => {
     this.setState({
       conteudo: proximaPagina
     })
@@ -22,12 +20,20 @@ class Contact extends Component {
 
   render () {
     return (
-      <div className='contato'>
-        {this.state.conteudo === undefined && (
-          <Inicial onClick={this.handleClick} />
-        )}
-        {this.state.conteudo === 'final' && <ThankYou />}
-      </div>
+      <section className='contato'>
+        {
+          this.state.conteudo === 'form' &&
+          <Form
+            mudaConteudo={this.handleMudaConteudo}
+          />
+        }
+        {
+          this.state.conteudo === 'thankYou' &&
+          <ThankYou
+            mudaConteudo={this.handleMudaConteudo}
+          />
+        }
+      </section>
     )
   }
 }

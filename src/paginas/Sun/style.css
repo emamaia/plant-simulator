@@ -32,6 +32,13 @@ span{
     padding-top: 50px;
 }
 
+.arrow-pages{
+    width: 20px; 
+    background-color: #f5efef;
+    padding-left: 5px;
+    color: #15573F; 
+}
+
 .btn-pages{
     background:#f5efef;
     border-radius: 20px;
@@ -108,13 +115,14 @@ span{
     }
 
     @media (max-width: 810px) {
-        .pages-title img{
-            width: 4.5rem;
-        }
-        
         .card-icon{
-            width: 110px;
-            height: 110px;
+            width: 8rem;
+            height: 8rem;
+        }
+
+        .card-icon__selected{
+            width: 8rem;
+            height: 8rem;
         }
        
         .icons{
@@ -124,6 +132,11 @@ span{
 
     @media (max-width: 670px) {
         .card-icon{
+            width: 115px;
+            height: 115px;
+        }
+
+        .card-icon__selected{
             width: 115px;
             height: 115px;
         }
@@ -146,20 +159,24 @@ span{
             height: 150px;
             margin: 20px;
         }
+
+        .card-icon__selected{
+            width: 250px;
+            height: 150px;
+            margin: 20px;
+        }
        
         .icons{
             width: 3rem;
         }
 
         .container-btn{
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-         
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+          }
 
-        }
-
-        .btn-pages{            
+          .btn-pages{           
             padding: 20px  70px;
             margin-top: 10px;
         }

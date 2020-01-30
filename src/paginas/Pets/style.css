@@ -116,6 +116,11 @@ span{
             width: 8rem;
             height: 8rem;
         }
+
+        .card-icon__selected{
+            width: 8rem;
+            height: 8rem;
+        }
        
         .icons{
             width: 3rem;
@@ -124,6 +129,11 @@ span{
 
     @media (max-width: 670px) {
         .card-icon{
+            width: 115px;
+            height: 115px;
+        }
+
+        .card-icon__selected{
             width: 115px;
             height: 115px;
         }
@@ -142,6 +152,12 @@ span{
             align-items: center;
         }
         .card-icon{
+            width: 250px;
+            height: 150px;
+            margin: 20px;
+        }
+
+        .card-icon__selected{
             width: 250px;
             height: 150px;
             margin: 20px;

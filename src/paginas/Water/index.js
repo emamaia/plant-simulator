@@ -4,6 +4,8 @@ import CardIcons from '../../componentes/CardIcons'
 import Links from '../../componentes/Links'
 
 import water from '../../assets/illustrations/wateringcan.png'
+import arrowR from '../../assets/icons/arrowRGreen.png'
+import arrowL from '../../assets/icons/arrowLGreen.png'
 import oneDrop from '../../assets/icons/green/one-drop.svg'
 import twooDrop from '../../assets/icons/green/two-drops.svg'
 import threeDrop from '../../assets/icons/green/three-drops.svg'
@@ -144,11 +146,15 @@ class Water extends React.Component {
                         <Links
                             to='/sun'
                             classes='btn-pages'
+                            arrow={arrowL}
+                            classeImg='arrow-pages'
                         >home</Links>
 
                         <Links
                             to='/pets'
                             classes='btn-pages'
+                            arrow={arrowR}
+                            classeImg='arrow-pages'
                         >next</Links>
                     </div>
 
